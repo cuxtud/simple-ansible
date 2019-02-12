@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   vars:
-          http_port: {{ listen_port }}
+          http_port: "{{ listen_port }}"
           max_clients: 200
   tasks:
           - name: ensure apache is at latest version
